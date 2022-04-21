@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+html{ scroll-behavior: smooth}
+body{
+    font-family: 'Roboto', sans-serif;;
+    margin: 0;
+}
+h1{font-size: 2.1em;}
+h2{font-size: 1.7em;}
+h3{font-size: 1.2em;}
+p{font-size: 0.8em;}
+
+.container{
+    max-width: 1200px;
+    margin:auto;
+}
+header{
+    background-color: rgb(245, 255, 255);
+}
+header .logo{
+margin: 0;
+padding: 18px 22px;
+font-weight: bold;
+color: rgb(119, 146, 228);
+font-size: 1.4em;
+
+}
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 18px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: rgb(68, 85, 135);
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5))
+    ,url("../JANGX/cuadroprincipal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.columnas{
+column-count: 4;
+}
+#primero{
+   padding: 120px 53px;
+}
+#primero h3{
+    font-size: 1.5em;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+section .columnas{
+    padding: 50px 20px;
+}
+#primero button{
+font-size: 1em;
+font-weight: bold;
+padding: 10px 30px;
+border-radius: 1;
+border: 0;
+box-shadow: none;
+color: rgba(0,0,0,0.6);
+background-color: darkkhaki;
+}
+#segundo img{
+    padding: 170px 90px;
+}
+#tercero img{
+    padding: 30px 40px;
+}
+#cuarto img{
+    padding: 60px 100px 0px 0px;
+}
+
+@media (min-width: 720px){
+    header{
+        position:fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
